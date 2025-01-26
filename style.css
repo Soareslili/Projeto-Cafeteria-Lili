@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 62, 5%;
+  transition: 0.2s linear;
+  font-family: "Poppins", serif;
+}
+
+.content {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  background-color: #252422;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  border-bottom: 2px solid #585858;
+  z-index: 1;
+  opacity: 1;
+}
+
+.logo {
+  width: 80px;
+  margin-left: 50px;
+}
+
+.content .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  font-weight: bold;
+  list-style: none;
+  gap: 50px;
+  margin-right: 50px;
+}
+
+nav {
+  margin-top: 15px;
+}
+
+
+.content .navbar li a {
+  color: #fdfcdc;
+  text-decoration: none;
+  padding: 1, 3rem;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.content .navbar a:hover {
+  color: #ffb627;
+  border-bottom: 3px solid #ffb627;
+  transition: all 1s;
+}
+
+.primeiro-content {
+  background: url(./img/melhor_café_do_dia.png);
+  filter: brightness(45%);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-1 {
+  display: flex;
+  flex-direction: column;
+  align-items:start;
+  margin-right: 30%;
+  margin-top: 10%;
+}
+
+
+.meu-cafe {
+  width: 600px;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #eb704e;
+  margin-bottom: 1.3rem;
+  text-align: start;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 3px #fff;
+}
+
+.sobre-cafe {
+  width: 800px;
+  color: #f3efef;
+  font-size: 1rem;
+  letter-spacing: unset;
+  margin-bottom: 1.3rem;
+  line-height: 25px;
+}
+
+.Pedir {
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+  background-color: #ee5328;
+  border: none;
+  border-radius: 10px;
+  border-radius: 10px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  transition: 1s;
+}
+
+.Pedir:hover {
+    transform: scale(1.0);
+    background-color: #d9e70d;
+    color: black;
+    font-size: 16px;
+  }
+
+.segundo-content {
+  background-color: #252422;
+  height: 100vh;
+  padding-bottom: 3rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sobre img {
+  width: 450px;
+  height: 450px;
+  margin-top: 6rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  border: 2px solid #fdfcdc;
+}
+
+.sobre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 200px;
+}
+
+.sobre .title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-right: 30px;
+  margin-top: 50px;
+  margin-bottom:30px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 3px #eb704e;
+  text-align: center;
+}
+
+.sobre .title span {
+  color: #e07a5f;
+  text-shadow: 2px 2px 3px #fff;
+}
+
+.content-cafe {
+  width: 550px;
+  align-items: center;
+  font-size: 1rem;
+  line-height: 22px;
+}
+
+.text-cafe {
+  margin-top: 50px;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #474646;
+}
+
+.menu h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 30px;
+  text-shadow: 2px 2px 3px #eb704e;
+}
+
+.itens-menu {
+  width: 90vw;
+  height: 100vh;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 350px));
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.itens-menu img {
+  width: 150px;
+  height: 100px;
+}
+
+.itens-menu .info {
+  background-color: rgb(221, 221, 221);
+border: none;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 1.5rem;
+box-shadow: rgb(136, 127, 127) 0px 5px 15px;
+}
+
+.itens-menu .info h3 {
+  margin-top: 1rem;
+  font-size: 1.0rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-decoration: underline;
+}
+
+.itens-menu .info h4 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 150px 150px;
+  margin-left: 5rem;
+}
+
+.itens-menu .info h4 span{
+  font-size: 1rem;
+  color: #585858;
+  margin-left: 0.3rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.itens-menu h3, h4 {
+  cursor: pointer;
+}
+
+.itens-menu .btn {
+  width: 200px;
+  height: 35px;
+  margin-top: 30px;
+  background-color: #e07a5f;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 1.5s;
+}
+
+.itens-menu .btn:hover {
+  transition: 1.5s;
+  background-color: #d9e70d;
+  color: black;
+}
+
+.Endereço {
+  height: 90vh;
+  background-color: #252422;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Endereço h2 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 3px #eb704e;
+}
+
+.Endereço iframe {
+  width: 600;
+  height: 450;
+  align-items: center;
+  justify-content: center;
+}
+
+.contato {
+  background-color:  #585858;
+  width: 100%;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contato h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 3px #eb704e;
+
+}
+
+.contato .icons-redes{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 130px;
+  color: #fff;
+  margin-top: 10px;
+}
+svg{
+  width: 50px;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+svg:hover {
+color: #e07a5f;
+transition: all 1s;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+  }
+
+  nav ul li {
+      align-items: center;
+      justify-content: center;
+      margin-left: 5rem;
+      width: 100%;
+  }
+  .menu-icon{
+      display: block;
+  }
+
+.primeiro-content {
+width: 100%;
+}
+
+.meu-cafe {
+  font-size: 20px;
+  margin-left: 5rem;
+}
+
+}
