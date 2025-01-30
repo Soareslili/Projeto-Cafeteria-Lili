@@ -35,7 +35,7 @@
         veritatis quia repellendus. Asperiores laborum iusto quidem,
         distinctio nemo assumenda molestiae aut error enim vel.
       </p>
-      <button class="Pedir">Peça o seu Agora</button>
+      <button class="Pedir">Peça o seu Agora.!</button>
     </div>
   </section>
 
@@ -63,6 +63,7 @@
 
   <section class="menu">
     <h2 id="Cardapio">Cardápio</h2>
+    <button class="Pedir" id="newOrderBtn">Iniciar novo pedido</button>
     <div class="itens-menu">
       <div class="capuccino">
         <div class="info">
@@ -72,11 +73,7 @@
             90ml
             <span>R$11,50 reais</span>
           </h4>
-          <h4>
-            180ml
-            <span>R$16,00 reais</span>
-          </h4>
-          <button class="btn">Realizar Pedido</button>
+          <button class="btn" onclick="addToCart(1, 'Capuccino', 11.50, 90)">Realizar Pedido</button>
         </div>
       </div>
 
@@ -88,11 +85,7 @@
             90m
             <span>R$13,50 reais</span>
           </h4>
-          <h4>
-            180ml
-            <span>R$16,00 reais</span>
-          </h4>
-          <button class="btn">Realizar Pedido</button>
+          <button class="btn" onclick="addToCart(2, 'Capuccino com Avelã', 13.50, 90 )">Realizar Pedido</button>
         </div>
       </div>
 
@@ -104,14 +97,11 @@
             90ml
             <span>R$13,50 reais</span>
           </h4>
-          <h4>
-            180ml
-            <span>R$16,00 reais</span>
-          </h4>
-          <button class="btn">Realizar Pedido</button>
+          <button class="btn" onclick="addToCart(3,  'Capuccino com Cookies\'n Cream', 13.50, 90)">Realizar
+            Pedido</button>
         </div>
       </div>
-
+    
       <div class="Baunilha">
         <div class="info">
           <img src="./img/café 4.png" alt="cafe-1" />
@@ -120,14 +110,10 @@
             90ml
             <span>R$13,50 reais</span>
           </h4>
-          <h4>
-            180ml
-            <span>R$16,00 reais</span>
-          </h4>
-          <button class="btn">Realizar Pedido</button>
+          <button class="btn" onclick="addToCart(4, 'Capuccino Baunilha', 13.50, 90)">Realizar Pedido</button>
         </div>
       </div>
-
+  
       <div class="Caramelo-Salgado">
         <div class="info">
           <img src="./img/café 5.png" alt="cafe-1" />
@@ -136,14 +122,10 @@
             90ml
             <span>R$13,50 reais</span>
           </h4>
-          <h4>
-            180ml
-            <span>R$16,00 reais</span>
-          </h4>
-          <button class="btn">Realizar Pedido</button>
+          <button class="btn" onclick="addToCart(5, 'Capuccino Caramelo Salgado', 13.50, 90 )">Realizar Pedido</button>
         </div>
       </div>
-
+    
       <div class="Diet">
         <div class="info">
           <img src="./img/café 6.png" alt="cafe-1" />
@@ -152,15 +134,22 @@
             90ml
             <span>R$13,50 reais</span>
           </h4>
-          <h4>
-            180ml
-            <span>R$16,00 reais</span>
-          </h4>
-          <button class="btn">Realizar Pedido</button>
+          <button class="btn" onclick="addToCart(5, 'Capuccino Diet', 13.50, 90 )">Realizar Pedido</button>
         </div>
       </div>
     </div>
+    <div id="cart">
+      <div class="cart-list" id="cartList"></div>
+      <button class="Pedir" id="confirmOrderBtn">Confirmar pedido</button>
+    </div>
   </section>
+
+  <div id="orderModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Pedido confirmado! Obrigado por comprar conosco.</p>
+    </div>
+  </div>
 
   <section class="contatos">
     <h2 id="Contato">Contato</h2>
@@ -185,6 +174,7 @@
         width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
+  
   </section>
 </body>
 <script src="./scripts.js"></script>
