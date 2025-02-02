@@ -13,6 +13,7 @@
 <body>
   <header class="content">
     <img src="./img/Cafeteria Lili.png" class="logo"></img>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
     <nav>
       <ul class="navbar" id="navbar">
         <li><a href="#Home">Home</a></li>
@@ -63,7 +64,6 @@
 
   <section class="menu">
     <h2 id="Cardapio">Cardápio</h2>
-    <button class="Pedir" id="newOrderBtn">Iniciar novo pedido</button>
     <div class="itens-menu">
       <div class="capuccino">
         <div class="info">
@@ -140,16 +140,16 @@
     </div>
     <div id="cart">
       <div class="cart-list" id="cartList"></div>
-      <button class="Pedir" id="confirmOrderBtn">Confirmar pedido</button>
+      <button class="Pedir" id="confirmOrderBtn" onclick="confirmOrder()">Confirmar pedido</button>
+    </div>
+
+    <div id="orderModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <p>Pedido confirmado! Obrigado por comprar conosco.</p>
+      </div>
     </div>
   </section>
-
-  <div id="orderModal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <p>Pedido confirmado! Obrigado por comprar conosco.</p>
-    </div>
-  </div>
 
   <section class="contatos">
     <h2 id="Contato">Contato</h2>
@@ -174,8 +174,12 @@
         width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-  
   </section>
+
+  <footer>
+    <img src="./img/icone-direitos.png" alt="foto-direitos">
+    <h1>2024 Lidiane Santos Soares <span>- Desenvolvedora Front End </span></h1>
+  </footer>
 </body>
 <script src="./scripts.js"></script>
 

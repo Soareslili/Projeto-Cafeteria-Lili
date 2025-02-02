@@ -1,5 +1,8 @@
 
-  
+function toggleMenu() {
+    const navMenu = document.getElementById("navbar");
+    navMenu.classList.toggle("menu-open");
+  }
 
   const products = [
     { id: 1, name: 'Capuccino', price: 11.50 },
@@ -11,12 +14,31 @@
   ];
   
   let cart = [];
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const orderModal = document.getElementById('orderModal');
+    const closeModalBtn = document.querySelector('.close');
   
+    closeModalBtn.addEventListener('click', () => { 
+      orderModal.style.display = 'none'; 
+    });
+    
+    window.onclick = (event) => { 
+      if (event.target === orderModal) { 
+        orderModal.style.display = 'none'; 
+      } 
+    };
+  });
+  
+  function confirmOrder() {
+    const orderModal = document.getElementById('orderModal');
+    orderModal.style.display = 'block';
+  }
+
   document.addEventListener('DOMContentLoaded', () => {
       const productList = document.getElementById('productList');
       const cartList = document.getElementById('cartList');
-      const orderModal = document.getElementById('orderModal');
-      const closeModal = document.querySelector('.close');
+      
   
       products.forEach(product => {
           const productItem = document.createElement('div');
@@ -82,11 +104,7 @@
           cartList.appendChild(cartItem);
       });
   }
-  
-  function confirmOrder() {
-      const orderModal = document.getElementById('orderModal');
-      orderModal.style.display = 'block';
-  }
+
   
   function resetOrder() {
       cart = [];
