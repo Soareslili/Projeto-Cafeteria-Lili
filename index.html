@@ -36,7 +36,6 @@
         veritatis quia repellendus. Asperiores laborum iusto quidem,
         distinctio nemo assumenda molestiae aut error enim vel.
       </p>
-      <button class="Pedir">Peça o seu Agora.!</button>
     </div>
   </section>
 
@@ -64,6 +63,12 @@
 
   <section class="menu">
     <h2 id="Cardapio">Cardápio</h2>
+
+    <div id="cart">
+      <div class="cart-list" id="cartList"></div>
+      <button class="Pedir" id="confirmOrderBtn" onclick="confirmOrder()">Confirmar pedido</button>
+    </div>
+    
     <div class="itens-menu">
       <div class="capuccino">
         <div class="info">
@@ -138,10 +143,7 @@
         </div>
       </div>
     </div>
-    <div id="cart">
-      <div class="cart-list" id="cartList"></div>
-      <button class="Pedir" id="confirmOrderBtn" onclick="confirmOrder()">Confirmar pedido</button>
-    </div>
+   
 
     <div id="orderModal" class="modal">
       <div class="modal-content">
